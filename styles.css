@@ -80,8 +80,8 @@ nav {
 
 .nav__links a:hover {
   color: var(--white);
-  background-color: var(--primary-color);
-  box-shadow: 0 0 10px var(--primary-color), 0 0 15px var(--primary-color);
+  background-color: rgb(255, 38, 92, 0.748);
+  box-shadow: 0 4px 20px rgba(255, 59, 111, 0.645);
   text-shadow: 0 0 5px var(--primary-color);
 }
 
@@ -374,25 +374,51 @@ nav {
     margin: .8rem 0;
 }
 
-.about-btn button,.cvContent a{
-    background: var(--gradient-white-bg2);
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #000;
-    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
-                  rgba(60,64,67,0.15)0px 2px 6px 2px;
-    margin-right: .5rem;
-    cursor: pointer;
-    transition: all .3s ease;
+.cvContent a {
+  background: var(--gradient-white-bg2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-right: .5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.cvContent a:hover {
+  box-shadow: 0 4px 20px rgba(255, 59, 111, 0.645); 
+  background-color: rgba(255, 38, 92, 0.748); 
+  color: #fff; 
+  transform: scale(1.05); 
+}
+
 
 
 .about-btn button.active{
     background: var(--gradient-color-bg);
     color: #000000;
+}.about-btn button {
+  background: var(--gradient-white-bg2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  box-shadow: rgba(60,64,67,0.3) 0px 1px 2px 0, rgba(60,64,67,0.15) 0px 2px 6px 2px;
+  margin-right: .5rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.about-btn button:hover {
+  box-shadow: 0 4px 20px rgba(255, 59, 111, 0.645);  /* Glowing effect */
+  background-color: rgba(255, 38, 92, 0.748); /* Slightly change background on hover */
+  color: #fff;  /* Change text color on hover */
+  transform: scale(1.05); /* Slightly scale the button */
 }
 
 .text-box{
